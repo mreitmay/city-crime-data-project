@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/main.css">
+      <title>Chicago Crime Data Analysis</title>
+   </head>
+    <!-- data to start site ends -->
+
+    <!-- Navigation bar starts -->
+   <body>
+      <nav class="navbar navbar-expand-lg bg-light navbar-light">
+         <img src="https://unsplash.it/30/30" class="mr-2"><a class="navbar-brand" href="#">Crime Data Analysis</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-body" aria-controls="navbar-body" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+         <div class="collapse navbar-collapse" id="navbar-body">
+            <ul class="navbar-nav mr-auto"></ul>
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+               <!-- example of inputting a link -->
+               <li class="nav-item"><a class="nav-link" href="chicago.html">Chicago</a></li>
+               <li class="nav-item"><a class="nav-link" href="losangeles.html">Los Angeles</a></li>
+               <li class="nav-item"><a class="nav-link" href="newyorkcity.html">New York City</a></li>
+            </ul>
+         </div>
+      </nav>
+     <!-- navigation bar ends -->
+      <div class="container" id="bsr-wrapper">
+         <div class='py-3 my-4'></div>
+         <h1>Crime Data </h1>
+         <!-- header ends, large spacer-->
+         <div class='py-3 my-4'></div>
+         <h2>Data was recorded for the city of Chicago</h2>
+         <div class='my-5'></div>
+         <!-- text left picture right-->
+         <p>Check out the rest of this page to explore the stats regarding crimes in Chicago. Learn about which crimes are most frequent, when they happen the most, and which locations you should maybe avoid.</p>
+         
+         <div class='my-5'></div>
+         <h3>Bar Chart of Top 10 Crime Types in Chicago</h3>
+         <div class="row">
+            <!-- Insert First Visualization here-->
+            <embed src="./ChiViz1-div.html" 
+                   type="text/html" height="700" width="1400" />
+            <div class="col-md-9">
+               <p>Theft was the most prominent crime with over 200,000 incidents.  This may point to issues like economic inequality and unemployment which are important to take note of when considering possible reforms to reduce crime. There are also high incidences of battery at nearly 150,000 and criminal damage at 100,000.  These crimes have to do with personal property and security and signal the need for more community-based interventions. Overall, an important takeaway to make is that the top crime types in New York are diverse.  There are both violent and non-violent crimes.  With theft and battery at the top of the list, it paints a picture of a city dealing with interpersonal conflict. However, with narcotics and other crimes like deceptive practices making the list, it also paints the picture of systemic issues like substance abuse and economic fraud. This suggests a multi-faceted approach when it comes to crime prevention.  </p>
+            </div>
+         </div>
+         <div class='my-5'></div>
+         <h3>Bar Chart of Top Ten Crime Locations in Chicago </h3>
+         <div class="row">
+            <embed src="./ChiViz2-div.html" 
+                   type="text/html" height="700" width="1400" />
+            <div class="col-md-9">
+               <p>One takeaway to be made is that public spaces are hotspots for crime. The data highlights that streets are the most common locations for criminal activity, with almost 300,000 incidents reported. This shows the necessity of urban safety measures whether that is increased street lighting, police presence, or more. At the same time, however, apartments also rank second in crime frequency and exceed 200,000 cases. This could suggesst a correlation between population density and crime rates or vulnerabilities in residential security overall. It's also interesting to look at the opposite end of the spectrum and see that bars and taverns have comparatively low crime rates.  Despite the assumption that alcohol-related incidents might be prevalent in such places, the data doesn't seem to support this inference. </p>
+            </div>
+         </div>
+         <div class='my-5'></div>
+         <h3>Line Chart of Total Crime Count by Date</h3>
+            <div class="row">
+               <embed src="./ChiViz4-div.html" 
+                      type="text/html" height="700" width="1400" />
+               <div class="col-md-9">
+                  <p>The graph shows crime counts from December 2020 to April 2025.  Overall, the crime counts are not steady and fluctuate significantly, with some days seeing counts over 140 incidents. It seems that there was an overall spike in crime during the year 2022, but that went down over time. Additionally, it seems that crime counts experience small spikes during the summer months. </p>
+               </div>
+            </div>
+         <div class='my-5'></div>
+         <h3>Pie Chart of Domestic vs. Non-Domestic Crimes in Chicago</h3>
+         <div class="row">
+            <embed src="./ChiViz3-div.html" 
+            type="text/html" height="700" width="1400" />
+            <div class="col-md-9">
+               <p>One takeaway to be made is that non-domestic crimes dominate. The majority of crimes in Chicago are non-domestic at 80.7%.  This suggests that public interactions are more frequently associated with crime. On the flip side, a takeaway to be made is that domestic crimes are a minority at 19.3% which incidcates that houseful incidents are less prevalent. Overall, there is a stark imbalance between domestic and non-domestic crimes.  This suggests that it could be beneficial to more strongly address non-domestic crimes when trying to make a substantial impact on overall crime reduction in Chicago.</p>
+            </div>
+         </div>
+      </div>
+
+      <div class='my-5'></div>
+      <!-- footer starts -->
+      <footer class="bg-light text-dark pt-5 pb-2 px-5">
+        <div class="row">
+           <div class="col-md-3">
+              <h2 class="mb-1">Analysis of crime data for NY, LA, and Chicago</h2>
+              <ul class="list-inline mt-5">
+                 <li class="list-inline-item"><a href="#" target="_blank" class="text-decoration-none"><i class="fa fa-fw fa-github-alt" aria-hidden="true"></i></a></li>
+                 <li class="list-inline-item py-1"><a href="#" target="_blank" class="text-decoration-none"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i></a></li>
+                 <li class="list-inline-item py-1"><a href="#" target="_blank" class="text-decoration-none"><i class="fa fa-fw fa-facebook-official" aria-hidden="true"></i></a></li>
+              </ul>
+           </div>
+           <div class="col-md-4">
+              <h5>Links to raw data used</h5>
+              <ul class="list-group list-group-flush">
+                 <li class="list-group-item py-1 bg-transparent border-0"><a href="" target="_blank">Chicago data website link</a></li>
+                 <li class="list-group-item py-1 bg-transparent border-0"><a href="" target="_blank">LA data website link</a></li>
+                 <li class="list-group-item py-1 bg-transparent border-0"><a href="" target="_blank">NYC data website link</a></li>
+              </ul>
+           </div>
+        </div>
+        <hr>
+        <div class='my-5'></div> 
+     </footer>
+     <!-- end of code-->
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script><script src="js/main.js"></script>
+   </body>
+</html>
