@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en" dir="ltr">
    <head>
@@ -27,44 +28,44 @@
      <!-- navigation bar ends -->
       <div class="container" id="bsr-wrapper">
          <div class='py-3 my-4'></div>
-         <h1>Crime Data </h1>
+         <h1>Crime data was recorded for 3 major cities </h1>
          <!-- header ends, large spacer-->
          <div class='py-3 my-4'></div>
-         <h2>Data was recorded for 3 major cities</h2>
+         <h2>Crimes in LA, New York, and Chicago were recorded by their corresponding Police forces. </h2>
          <div class='my-5'></div>
          <!-- text left picture right-->
-         <p>Check out the rest of the site to explore the stats regarding crimes in Los Angeles, Chicago, and New York City. The visualizations on this page will comparing the crime related stats across all three cities to each other.</p>
-         <div class="row">
-            <!-- why can't I add a bigger spacer here?? -->
-            <div class='my-5'></div>
-            <h3>Data compare 1</h3>
-            <div class="col-md-9">
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis rerum quae, ut iusto placeat! Ab porro ipsa ad nam repudiandae, dicta ducimus placeat, ipsam in, doloribus obcaecati omnis esse aspernatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum placeat at, deleniti minus necessitatibus, dolore adipisci ipsum provident distinctio in. Excepturi omnis, nisi. Possimus consequuntur unde labore rem in natus.</p>
-            </div>
-            <div class="col"><img src="https://unsplash.it/300/300" class="img-fluid mr-auto d-block border-0 rounded-0 "></div>
-         </div>
+         <p>Check out the rest of this page to explore the stats regarding crimes in all three cities. You can also check out data specific to your city, using the navigating tabs at the top of the page. </p>
+         
          <div class='my-5'></div>
-         <h3>Viz Compare 2</h3>
+         <h3>Most Common Crime per City</h3>
          <div class="row">
-            <div class="col"><img src="https://unsplash.it/300/300" class="img-fluid mr-auto d-block border-0 rounded-0"></div>
+            <!-- insert viz here-->
+            <embed src="./Compare_viz1.html"
+                   type="text/html" height="700" width="1400" />
             <div class="col-md-9">
-               <p>Random description of the visualization and what it tells us.</p>
+               <p>Assault & Related Offenses are the most common crimes in NYC (34,000), Theft leads in Chicago (41,000), and Stolen Vehicle tops the list in LA (149). The difference may lie in the structure and daily life of each city. NYC and Chicago have a dense urban and pedestrian environment likely to contribute to more interpersonal crimes, while LA's car-centric culture may explain the focus on vehicle theft. LA's dataset is much smaller (1,000 total offenses in 2020), so its numbers should be interpreted cautiously. For fair comparison, NYC and Chicago data were also limited to one year (2023 and 2021 for each). 
+               To put things in perspective: NYC's top crime makes up about 15% of its total crimes, Chicago's makes up roughly 19.5%, while LA's top crime makes up about 15% of its dataset, suggesting that while the raw numbers vary, top crimes represent a similar share of each city's recorded annual crime.
+               </p>
             </div>
          </div>
          <div class='my-5'></div>
-         <h3>Viz Compare 3</h3>
+         <h3>Comparison of Total Number of Recorded Crimes per City</h3>
          <div class="row">
             <div class="col-md-9">
-               <p>Random description of the visualization and what it tells us.</p>
+               <p>This pie chart compares the total number of crimes recorded in each city over one year: NYC (226,872), Chicago (209,478), and LA (1,000). NYC accounts for the largest share, followed closely by Chicago, while LA makes up less than 1% of the total. The dramatic difference highlights the limited scope of the LA dataset, which may reflect differences in reporting practices or data availability rather than actual crime levels. All datasets were adjusted to include one year for consistency: 2023 for NYC, 2021 for Chicago, and 2020 for LA.</p>
             </div>
-            <div class="col"><img src="https://unsplash.it/300/300" class="img-fluid mr-auto d-block border-0 rounded-0 "></div>
+            <!-- insert viz here-->
+            <embed src="./Compare_viz2.html"
+                   type="text/html" height="700" width="1400" />
          </div>
          <div class='my-5'></div>
-         <h3>Viz Compare 4</h3>
+         <h3>Highest Crime Location in LA & Chicago</h3>
          <div class="row">
-            <div class="col"><img src="https://unsplash.it/300/300" class="img-fluid mr-auto d-block border-0 rounded-0"></div>
+            <!-- insert viz here-->
+            <embed src="./Compare_viz3.html"
+                   type="text/html" height="700" width="1400" />
             <div class="col-md-9">
-               <p>Random description of the visualization and what it tells us.</p>
+               <p>This visualization compares the highest-crime locations in both LA and Chicago. In LA, 77th Street accounts for 11.2% of all crimes in the dataset, making it the most crime-dense area. In Chicago, Community Area 25, identified as Austin through this <a href= "https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-Community-Areas-Map/cauq-8yn6">link</a>, had the highest number of reported incidents. We were not able to include NYC data, as the dataset we used did not include location details. Still, we believe this comparison helps spotlight crime concentration in specific neighborhoods to better educate members of each community.</p>
             </div>
          </div>
       </div>
@@ -83,27 +84,15 @@
            <div class="col-md-4">
               <h5>Links to raw data used</h5>
               <ul class="list-group list-group-flush">
-                 <li class="list-group-item py-1 bg-transparent border-0"><a href="" target="_blank">Chicago data website link</a></li>
-                 <li class="list-group-item py-1 bg-transparent border-0"><a href="" target="_blank">LA data website link</a></li>
-                 <li class="list-group-item py-1 bg-transparent border-0"><a href="" target="_blank">NYC data website link</a></li>
+                 <li class="list-group-item py-1 bg-transparent border-0"><a href="https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2/about_data" target="_blank">Chicago data website link</a></li>
+                 <li class="list-group-item py-1 bg-transparent border-0"><a href="https://data.lacity.org/Public-Safety/Crime-Data-from-2020-to-Present/2nrs-mtv8/explore/query/SELECT%0A%20%20%60dr_no%60%2C%0A%20%20%60date_rptd%60%2C%0A%20%20%60date_occ%60%2C%0A%20%20%60time_occ%60%2C%0A%20%20%60area%60%2C%0A%20%20%60area_name%60%2C%0A%20%20%60rpt_dist_no%60%2C%0A%20%20%60part_1_2%60%2C%0A%20%20%60crm_cd%60%2C%0A%20%20%60crm_cd_desc%60%2C%0A%20%20%60mocodes%60%2C%0A%20%20%60vict_age%60%2C%0A%20%20%60vict_sex%60%2C%0A%20%20%60vict_descent%60%2C%0A%20%20%60premis_cd%60%2C%0A%20%20%60premis_desc%60%2C%0A%20%20%60weapon_used_cd%60%2C%0A%20%20%60weapon_desc%60%2C%0A%20%20%60status%60%2C%0A%20%20%60status_desc%60%2C%0A%20%20%60crm_cd_1%60%2C%0A%20%20%60crm_cd_2%60%2C%0A%20%20%60crm_cd_3%60%2C%0A%20%20%60crm_cd_4%60%2C%0A%20%20%60location%60%2C%0A%20%20%60cross_street%60%2C%0A%20%20%60lat%60%2C%0A%20%20%60lon%60/page/filter" target="_blank">LA data website link</a></li>
+                 <li class="list-group-item py-1 bg-transparent border-0"><a href="https://www.nyc.gov/site/nypd/stats/crime-statistics/citywide-crime-stats.page" target="_blank">NYC data website link</a></li>
               </ul>
            </div>
         </div>
         <hr>
         <!-- probably delete this part? -->
-        <div class="row mt-4">
-           <div class="col-sm-6">
-              <p>Copyright © 20XX Brand</p>
-           </div>
-           <div class="col-sm-6">
-              <ul class="list-inline text-sm-center text-md-right">
-                 <li class="list-inline-item"><a href="" target="_blank">Link 1</a></li>
-                 <li class="list-inline-item"><a href="" target="_blank">Link 2</a></li>
-                 <li class="list-inline-item"><a href="" target="_blank">Link 3</a></li>
-                 <li class="list-inline-item"><a href="" target="_blank">Link 4</a></li>
-              </ul>
-           </div>
-        </div>
+        
      </footer>
      <!-- end of code-->
       <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script><script src="js/main.js"></script>
