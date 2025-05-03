@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en" dir="ltr">
    <head>
@@ -36,30 +37,44 @@
          <p>Check out the rest of this page to explore the stats regarding crimes in Los Angeles. Learn about which crimes are most frequent, when they happen the most, and which locations you should maybe avoid.</p>
          
          <div class='my-5'></div>
-         <h3>Location and types of crimes</h3>
+         <h3>Frequency of crimes per day</h3>
          <div class="row">
             <!-- insert viz here-->
             <embed src="./LAviz1.html"
                    type="text/html" height="700" width="1400" />
             <div class="col-md-9">
-               <p>Random description of the visualization and what it tells us.</p>
+               <p>The frequency data shows a clear seasonal trend in crime occurances, with the highest number of incidents occurring on August 1st and overall peaks during the summer months. This aligns with periods of increased outdoor activity, tourism, and idle time, especially among youth who are out of school. Interestingly, crime rates begin to decline sharply in early September. This timing coincides with the start of the academic school year, suggesting that structured routines, school schedules, and fewer people on the streets contribute to a reduction in criminal activity. The pattern highlights how social rhythms and public behavior like vacation periods and holidays can significantly influence urban crime dynamics. Understanding these seasonal shifts is crucial for resource planning and preventative strategies during high-risk periods.</p>
             </div>
          </div>
          <div class='my-5'></div>
-         <h3>Viz Compare 2</h3>
+         <h3>Top 10 Crime Types</h3>
          <div class="row">
             <div class="col-md-9">
-               <p>Random description of the visualization and what it tells us.</p>
+               <p>The data reveals that vehicle-related crimes dominate the top 10 most frequent offenses in Los Angeles. At the top of the list is Stolen Vehicle, accounting for about 15% of all reported incidents. This is followed by crimes like "Burglary from Vehicle" and "Petty Theft from Motor Vehicle", underscoring how cars are a primary target for criminal activity. These patterns suggest that residents should exercise caution about what they leave visible inside their vehicles and be strategic about where they park, especially in high-risk areas. Other common crimes, such as Simple Assault, Felony Vandalism, and Robbery, point to both property-related and interpersonal threats. Lastly, Simple Assault from an Intimate Partner also ranks among the most frequent crimes. This highlights the ongoing issue of domestic violence that is seen across the world. Overall, the list of crimes reflects a complex urban environment where spaces are vulnerable, regardless of if they are public or private. Prevention strategies must address a wide range of threats.</p>
             </div>
-            <div class="col"><img src="https://unsplash.it/300/300" class="img-fluid mr-auto d-block border-0 rounded-0 "></div>
+            <!-- insert viz here-->
+            <embed src="./LAviz2.html"
+                   type="text/html" height="700" width="1400" />
          </div>
          <div class='my-5'></div>
-         <h3>Viz Compare 3</h3>
+         <h3>Map of Crime Locations</h3>
          <div class="row">
-            <div class="col"><img src="https://unsplash.it/300/300" class="img-fluid mr-auto d-block border-0 rounded-0"></div>
+            <!-- insert viz here-->
+            <embed src="./LAviz3.html"
+                   type="text/html" height="700" width="1400" />
             <div class="col-md-9">
-               <p>Random description of the visualization and what it tells us.</p>
+               <p>This interactive map plots the geographic locations of reported crimes in LA, using latitude and longitude data to mark each incident. This visualization provides a spatial understanding of crime distribution throughout the city. By zooming in and out, you can identify specific neighborhoods or intersections with high concentrations of crime, revealing potential hotspots that might otherwise go unnoticed in aggregated data. This kind of mapping is especially useful for urban planners, local law enforcement, and community organizations seeking to allocate resources more effectively. It also empowers residents to become more aware of safety concerns in their immediate surroundings, encouraging informed decision-making about mobility and local engagement.</p>
             </div>
+         </div>
+         <div class='my-5'></div>
+         <h3>Top 10 Crime Locations</h3>
+         <div class="row">
+            <div class="col-md-9">
+               <p>This visualization highlights the top 10 most common locations where crimes occur in LA, providing a clearer picture of where public safety concerns are most concentrated. Working alongside the interactive crime map above, this chart helps users quickly identify high-risk areas by name. Whether it's a major transit hub or a densely populated neighborhood, the ability to cross-reference these locations with the visual map enhances understanding of spatial crime patterns. This connection between frequency and geography is valuable for both individual awareness and city-wide decision-making, offering a focused lens on where preventive measures might be most urgently needed. </p>
+            </div>
+            <!-- insert viz here-->
+            <embed src="./LAviz4.html"
+                   type="text/html" height="700" width="1400" />
          </div>
       </div>
       <div class='my-5'></div>
@@ -77,9 +92,9 @@
            <div class="col-md-4">
               <h5>Links to raw data used</h5>
               <ul class="list-group list-group-flush">
-                 <li class="list-group-item py-1 bg-transparent border-0"><a href="" target="_blank">Chicago data website link</a></li>
-                 <li class="list-group-item py-1 bg-transparent border-0"><a href="" target="_blank">LA data website link</a></li>
-                 <li class="list-group-item py-1 bg-transparent border-0"><a href="" target="_blank">NYC data website link</a></li>
+                 <li class="list-group-item py-1 bg-transparent border-0"><a href="https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2/about_data" target="_blank">Chicago data website link</a></li>
+                 <li class="list-group-item py-1 bg-transparent border-0"><a href="https://data.lacity.org/Public-Safety/Crime-Data-from-2020-to-Present/2nrs-mtv8/explore/query/SELECT%0A%20%20%60dr_no%60%2C%0A%20%20%60date_rptd%60%2C%0A%20%20%60date_occ%60%2C%0A%20%20%60time_occ%60%2C%0A%20%20%60area%60%2C%0A%20%20%60area_name%60%2C%0A%20%20%60rpt_dist_no%60%2C%0A%20%20%60part_1_2%60%2C%0A%20%20%60crm_cd%60%2C%0A%20%20%60crm_cd_desc%60%2C%0A%20%20%60mocodes%60%2C%0A%20%20%60vict_age%60%2C%0A%20%20%60vict_sex%60%2C%0A%20%20%60vict_descent%60%2C%0A%20%20%60premis_cd%60%2C%0A%20%20%60premis_desc%60%2C%0A%20%20%60weapon_used_cd%60%2C%0A%20%20%60weapon_desc%60%2C%0A%20%20%60status%60%2C%0A%20%20%60status_desc%60%2C%0A%20%20%60crm_cd_1%60%2C%0A%20%20%60crm_cd_2%60%2C%0A%20%20%60crm_cd_3%60%2C%0A%20%20%60crm_cd_4%60%2C%0A%20%20%60location%60%2C%0A%20%20%60cross_street%60%2C%0A%20%20%60lat%60%2C%0A%20%20%60lon%60/page/filter" target="_blank">LA data website link</a></li>
+                 <li class="list-group-item py-1 bg-transparent border-0"><a href="https://www.nyc.gov/site/nypd/stats/crime-statistics/citywide-crime-stats.page" target="_blank">NYC data website link</a></li>
               </ul>
            </div>
         </div>
